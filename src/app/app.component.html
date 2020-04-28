@@ -1,0 +1,18 @@
+<div class="calculator">
+  <div class="screen">
+    <div class="result">{{ result }}</div>
+    <div class="inputs">
+      <input [(ngModel)]="number1">
+      <input [value]="operation" disabled>
+      <input [(ngModel)]="number2">
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="btn" (click)="applyOperation('+')">+</button>
+    <button class="btn" (click)="applyOperation('-')">-</button>
+    <button class="btn" (click)="applyOperation('*')">*</button>
+    <button class="btn" (click)="applyOperation('/')">/</button>
+    <button class="btn btn-eq btn-eq__1" (click)="clearAll()">AC</button>
+    <button class="btn btn-eq btn-eq__2" (click)="calculate()">=</button>
+  </div>
+</div>
