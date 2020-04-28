@@ -32,6 +32,8 @@ export class AppComponent {
   }
 
   public calculate(): void {
+    const number1 = Number(this.number1);
+    const number2 = Number(this.number2);
   }
 
   public applyOperation(operation: string): void {
